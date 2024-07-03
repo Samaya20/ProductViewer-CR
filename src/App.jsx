@@ -1,20 +1,14 @@
 import React from "react";
+import { products } from "./utils/data";
+import ProductSlide from "./components/ProductSlide";
 import "./App.css";
-import Content from "./components/Content/Content";
-import ProductSlide from "./components/Product/ProductSlide";
-import { slideImages } from "./utils/data";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <div className="left-side">
-        <ProductSlide slideImages={slideImages} />
-      </div>
-      <div className="right-side">
-        <Content />
-      </div>
+    <div className="app">
+      <ProductSlide products={products} />
     </div>
   );
-}
+};
 
 export default App;
