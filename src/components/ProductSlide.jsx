@@ -38,7 +38,7 @@ export default function App({ products }) {
               <h2>{product.product_name}</h2>
               <p>Collection: {product.collection_name}</p>
               <p>Price: ${product.price}</p>
-              <p>Old Price: ${product.old_price}</p>
+              <p>Old Price: <span>${product.old_price}</span></p>
               <div className="color-circles">
                 {product.colors.map((color, index) => (
                   <div
